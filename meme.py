@@ -2,6 +2,10 @@ import string
 import time
 import os
 
+def esperar():
+    time.sleep(tempo)
+    os.system('cls')
+    
 if __name__ == "__main__":
     lista = list(string.ascii_letters)
     lista.insert(0," ")
@@ -14,11 +18,10 @@ if __name__ == "__main__":
         flag = True
         for j in lista:
             if i != j and flag:
-                time.sleep(tempo)
+                esperar()
                 print(palavra_salva + j)
-                os.system('cls')
             if i==j:
-                time.sleep(tempo)
+                esperar()
                 palavra_salva = palavra_salva + j
                 print(palavra_salva)
                 flag = False
