@@ -6,7 +6,7 @@ if __name__ == "__main__":
     lista = []
     lista.append(' ')
     lista.append(list(string.ascii_letters))
-    nome = list("Leonardo dos hs")
+    nome = list("Testando terminal")
     tempo = 0.01
     palavra_salva = ""
     flag = bool
