@@ -3,9 +3,8 @@ import time
 import os
 
 if __name__ == "__main__":
-    lista = []
-    lista.append(' ')
-    lista.append(list(string.ascii_letters))
+    lista = list(string.ascii_letters)
+    lista.insert(0," ")
     nome = list("Testando terminal")
     tempo = 0.01
     palavra_salva = ""
@@ -20,7 +19,7 @@ if __name__ == "__main__":
                 os.system('cls')
             if i==j:
                 time.sleep(tempo)
-                print(palavra_salva + j)
                 palavra_salva = palavra_salva + j
+                print(palavra_salva)
                 flag = False
 
